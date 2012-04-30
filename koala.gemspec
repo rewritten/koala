@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<multi_json>,    ["~> 1.3.0"])
-      s.add_runtime_dependency(%q<faraday>,  ["~> 0.7.0"])
+      s.add_runtime_dependency(%q<faraday>,  [">= 0.7", "< 0.9"])
       s.add_development_dependency(%q<rspec>,     ["~> 2.8.0rc1"])
       s.add_development_dependency(%q<rake>,      ["~> 0.8.7"])
     else
